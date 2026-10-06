@@ -1,0 +1,61 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --background: 210 20% 98%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --primary: 222 66% 32%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 24% 96%;
+  --secondary-foreground: 222 40% 20%;
+  --muted: 210 24% 96%;
+  --muted-foreground: 215 18% 45%;
+  --accent: 210 30% 94%;
+  --accent-foreground: 222 40% 20%;
+  --destructive: 0 72% 45%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214 24% 90%;
+  --input: 214 24% 88%;
+  --ring: 222 66% 42%;
+  --sidebar: 0 0% 100%;
+  --sidebar-foreground: 222 30% 25%;
+  --sidebar-accent: 214 32% 95%;
+  --sidebar-border: 214 24% 91%;
+  --radius: 0.5rem;
+}
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'cv11', 'ss01';
+}
+/* Tabular figures for all numeric ERP data */
+.num {
+  font-variant-numeric: tabular-nums;
+}
+/* Thin, unobtrusive scrollbars for dense table regions */
+.thin-scroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.thin-scroll::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--border));
+  border-radius: 999px;
+}
